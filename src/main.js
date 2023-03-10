@@ -2,7 +2,7 @@ import gsap from 'gsap'
 gsap.registerPlugin(Physics2DPlugin)
 gsap.to('.app-links', { xPercent: 100, duration: 1 })
 
-document.querySelectorAll('.gsap-select .button').forEach((button) => {
+document.querySelectorAll('.button').forEach((button) => {
   const bounding = button.getBoundingClientRect()
 
   button.addEventListener('mousemove', (e) => {
